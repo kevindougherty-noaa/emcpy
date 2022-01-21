@@ -35,7 +35,7 @@ jobs:
         docs-folder: "docs/"
         pre-build-commnad: "pip install -r requirements_doc.txt && pip install ."
 
-    - names: Upload artifact
+    - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
