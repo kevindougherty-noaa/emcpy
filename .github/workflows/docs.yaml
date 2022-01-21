@@ -33,7 +33,7 @@ jobs:
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        pre-build-commnad: "pip install -r requirements_doc.txt && pip install ."
+        pre-build-command: "pip install -r requirements_doc.txt && pip install ."
 
     - name: Upload artifact
       uses: actions/upload-artifact@v1
