@@ -30,12 +30,14 @@ jobs:
         pip install .
 
     - name: Generate documentation
-      run: |
-        pdoc --docformat "google" -o docs emcpy
-        ls -lR docs/
-
-    - name: Deploy documentation
-      uses: ammaraskar/sphinx-action@master 
+      uses: ammaraskar/sphinx-action@master
       with:
-        branch: gh-pages
-        folder: docs
+        docs-folder: "docs/"
+        pre-build-commnad: "pip install -r requirements_doc.txt && pip install ."
+
+    - names: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: DocumentationHTML
+        path: docs/_build/html/
+      
