@@ -10,8 +10,8 @@ EMCPy currently contains the following submodules:
 
 .. toctree::
       :maxdepth: 2
-   
-   /Calculations/index
+
+#   /Calculations/index
 #   /IO/index
 #   /Plotting/index
 #   /Statistics/index
