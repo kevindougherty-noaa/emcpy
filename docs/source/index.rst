@@ -9,14 +9,7 @@ Welcome to EMC's one-stop shop for python tools.
 EMCPy currently contains the following submodules:
 
 .. toctree::
-      :maxdepth: 2
-
-#   /Calculations/index
-#   /IO/index
-#   /Plotting/index
-#   /Statistics/index
-#   /Utilities/index
-
+    :maxdepth: 2
 
 
 Indices and tables
